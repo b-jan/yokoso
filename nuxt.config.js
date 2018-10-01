@@ -1,3 +1,4 @@
+require('dotenv').config()
 const pkg = require('./package')
 
 module.exports = {
@@ -19,9 +20,15 @@ module.exports = {
   ],
 
   plugins: [
+    {src: '~/plugins/firebase-client-init.js', ssr: false },
+    {src: '~/plugins/auth-cookie.js', ssr: false },
+  ],
+  serverMiddleware: [
+    '~/serverMiddleware/validateFirebaseIdToken'
   ],
   modules: [
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/dotenv'
   ],
   axios: {
   },

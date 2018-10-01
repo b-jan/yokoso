@@ -13,3 +13,6 @@ node_modules/
 
 # Nuxt generate
 dist
+
+# Firebase Admin SDK
+serviceAccountKey.json
