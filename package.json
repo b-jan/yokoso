@@ -1,7 +1,7 @@
 {
   "name": "yokoso",
   "version": "1.0.0",
-  "description": "My exceptional Nuxt.js project",
+  "description": "M33 Yokoso Nuxt.js",
   "author": "b-jan",
   "private": true,
   "scripts": {
@@ -15,8 +15,10 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/dotenv": "^1.1.1",
+    "cookie-parser": "^1.4.3",
     "cross-env": "^5.2.0",
     "firebase": "^5.5.2",
+    "firebase-admin": "^6.0.0",
     "nuxt": "^2.0.0",
     "vuexfire": "^2.3.1"
   },
