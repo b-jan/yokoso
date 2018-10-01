@@ -5,18 +5,16 @@
       <h1 class="title">
         YOKOSO
       </h1>
-      <login-button />
+      <h2 class="subtitle">
+        Welcome to Theodo
+      </h2>
     </div>
   </section>
 </template>
 
 <script>
-import LoginButton from '~/components/LoginButton.vue'
-
 export default {
-  components: {
-    LoginButton,
-  }
+  middleware: 'auth-check'
 }
 </script>
 
@@ -39,6 +37,15 @@ export default {
   color: white;
   letter-spacing: 1px;
   margin-bottom: 20px;
+}
+
+.subtitle {
+  border: solid 3px white;
+  padding: 10px;
+  font-size: 30px;
+  color: white;
+  word-spacing: 5px;
+  margin-bottom: 15px;
 }
 
 </style>

@@ -15,4 +15,4 @@ node_modules/
 dist
 
 # Firebase Admin SDK
-serviceAccountKey.json
+m33-yokoso-firebase-admin-sdk.json
